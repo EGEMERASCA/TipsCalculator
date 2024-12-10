@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 //valor total conta
-//numero de pessoas
+//numero de pessoass
 //porcentagem tips
     //10%, 15% ou 20%
 // calcular / limpar
