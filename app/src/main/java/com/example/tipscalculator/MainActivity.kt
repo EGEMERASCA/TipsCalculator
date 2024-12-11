@@ -3,21 +3,18 @@ package com.example.tipscalculator
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 //valor total conta
 //numero de pessoass
 //porcentagem tips
-    //10%, 15% ou 20%
+//10%, 15% ou 20%
 // calcular / limpar
 
 //programar as views
 //recuperar as viewa do layout
-    //find view by id
-    //view binding
+//find view by id
+//view binding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +29,5 @@ class MainActivity : AppCompatActivity() {
         btnClean.setOnClickListener {
             tvTitle.text = "Novo texto"
         }
-
     }
 }
