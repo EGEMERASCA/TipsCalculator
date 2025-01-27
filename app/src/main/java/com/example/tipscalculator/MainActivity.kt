@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Camel case
-
         val tvTitle: TextView = findViewById(R.id.tv_title)
         val btnClean: Button = findViewById(R.id.btn_clean)
 
