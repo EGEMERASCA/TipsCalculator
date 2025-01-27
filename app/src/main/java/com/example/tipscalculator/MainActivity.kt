@@ -4,13 +4,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-
-//valor total conta
-//numero de pessoass
-//porcentagem tips
-//10%, 15% ou 20%
-// calcular / limpar
-
 //programar as views
 //recuperar as viewa do layout
 //find view by id
