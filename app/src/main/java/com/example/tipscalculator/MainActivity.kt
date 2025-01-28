@@ -1,13 +1,9 @@
 package com.example.tipscalculator
 
+import android.health.connect.datatypes.units.Percentage
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tipscalculator.databinding.ActivityMainBinding
-
-//programar as views
-//recuperar as viewa do layout
-//find view by id
-//view binding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -16,18 +12,30 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rgOpitionOne.setOnCheckedChangeListener { _, isChecked ->
+        var percentage: Int = 0
 
+        binding.rgOpitionOne.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                percentage = 10
+            }
         }
         binding.rgOpitionTwo.setOnCheckedChangeListener { _, isChecked ->
-
+            if (isChecked) {
+                percentage = 15
+            }
         }
         binding.rgOpitionThree.setOnCheckedChangeListener { _, isChecked ->
-
+            if (isChecked) {
+                percentage = 20
+            }
         }
 
         binding.btnDone.setOnClickListener {
+            val vTotal: Float = binding.tieTotal.text.toString().toFloat()
+            val nPeople: Int = binding.tieNpeople.text.toString().toFloat()
 
+            val totaltemp = vTotal / nPeople
+            val totalWithTips = totaltemp * percentage / 100
         }
     }
 }
