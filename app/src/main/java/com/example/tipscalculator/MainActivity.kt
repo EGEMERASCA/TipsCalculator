@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnDone.setOnClickListener {
             val vTotal: Float = binding.tieTotal.text.toString().toFloat()
-            val nPeople: Int = binding.tieNpeople.text.toString().toFloat()
+            val nPeople: Int = binding.tieNpeople.text.toString().toInt()
 
             val totaltemp = vTotal / nPeople
             val totalWithTips = totaltemp * percentage / 100
