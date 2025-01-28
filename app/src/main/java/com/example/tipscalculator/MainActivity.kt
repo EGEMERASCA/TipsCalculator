@@ -1,8 +1,6 @@
 package com.example.tipscalculator
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tipscalculator.databinding.ActivityMainBinding
 
@@ -18,7 +16,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnClean.setOnClickListener {  }
+        binding.rgOpitionOne.setOnCheckedChangeListener { _, isChecked ->
 
+        }
+        binding.rgOpitionTwo.setOnCheckedChangeListener { _, isChecked ->
+
+        }
+        binding.rgOpitionThree.setOnCheckedChangeListener { _, isChecked ->
+
+        }
+
+        binding.btnDone.setOnClickListener {
+
+        }
     }
 }
