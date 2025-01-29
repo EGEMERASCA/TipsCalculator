@@ -30,13 +30,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnDone.setOnClickListener {
-            val vTotal: Float = binding.tieTotal.text.toString().toFloat()
-            val nPeople: Int = binding.tieNpeople.text.toString().toInt()
+            val vTotalTemp = binding.tieTotal.text
+            val nPeopleTemp = binding.tieNpeople.text
 
-            val totaltemp = vTotal / nPeople
-            val Tips = totaltemp * percentage / 100
-            val totalwtips = totaltemp + Tips
-            println("edu" + totalwtips)
+            if (vTotalTemp?.isEmpty() == true ||
+                nPeopleTemp?.isEmpty() == true
+            ) {
+
+            } else {
+
+                val vTotal: Float = vTotalTemp.toString().toFloat()
+                val nPeople: Int = nPeopleTemp.toString().toInt()
+
+                val totaltemp = vTotal / nPeople
+                val Tips = totaltemp * percentage / 100
+                val totalwtips = totaltemp + Tips
+                binding.tvResult.text = "Total with tips: $totalwtips"
+            }
         }
     }
 }
