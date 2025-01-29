@@ -3,6 +3,7 @@ package com.example.tipscalculator
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tipscalculator.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity() {
             if (vTotalTemp?.isEmpty() == true ||
                 nPeopleTemp?.isEmpty() == true
             ) {
-
+                Snackbar.make(binding.tieTotal, "Preencha todos os campos", Snackbar.LENGTH_LONG)
+                    .show()
             } else {
 
                 val vTotal: Float = vTotalTemp.toString().toFloat()
@@ -47,6 +49,15 @@ class MainActivity : AppCompatActivity() {
                 val totalwtips = totaltemp + Tips
                 binding.tvResult.text = "Total with tips: $totalwtips"
             }
+        }
+
+        binding.btnClean.setOnClickListener {
+            binding.tvResult.text = ""
+            binding.tieTotal.setText("")
+            binding.tieNpeople.setText("")
+            binding.rgOpitionOne.isChecked = false
+            binding.rgOpitionTwo.isChecked = false
+            binding.rgOpitionThree.isChecked = false
         }
     }
 }
