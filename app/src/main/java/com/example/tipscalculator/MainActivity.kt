@@ -1,6 +1,5 @@
 package com.example.tipscalculator
 
-import android.health.connect.datatypes.units.Percentage
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tipscalculator.databinding.ActivityMainBinding
@@ -35,7 +34,9 @@ class MainActivity : AppCompatActivity() {
             val nPeople: Int = binding.tieNpeople.text.toString().toInt()
 
             val totaltemp = vTotal / nPeople
-            val totalWithTips = totaltemp * percentage / 100
+            val Tips = totaltemp * percentage / 100
+            val totalwtips = totaltemp + Tips
+            println("edu" + totalwtips)
         }
     }
 }
