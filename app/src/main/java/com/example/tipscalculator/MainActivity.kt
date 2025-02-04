@@ -51,6 +51,9 @@ class MainActivity : AppCompatActivity() {
                 binding.tvResult.text = String.format("Total with tips: %.2f", totalwtips)
 
                 val intent = Intent(this, MainActivity2::class.java)
+                intent.apply {
+                    putExtra()
+                }
                 startActivity(intent)
             }
         }
