@@ -1,5 +1,6 @@
 package com.example.tipscalculator
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tipscalculator.databinding.ActivityMainBinding
@@ -59,8 +60,8 @@ class MainActivity : AppCompatActivity() {
             binding.rgOpitionTwo.isChecked = false
             binding.rgOpitionThree.isChecked = false
 
-            //Intent
-
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }
