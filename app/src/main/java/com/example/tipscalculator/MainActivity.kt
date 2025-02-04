@@ -49,6 +49,9 @@ class MainActivity : AppCompatActivity() {
                 val Tips = totaltemp * percentage / 100
                 val totalwtips = totaltemp + Tips
                 binding.tvResult.text = String.format("Total with tips: %.2f", totalwtips)
+
+                val intent = Intent(this, MainActivity2::class.java)
+                startActivity(intent)
             }
         }
 
@@ -60,8 +63,6 @@ class MainActivity : AppCompatActivity() {
             binding.rgOpitionTwo.isChecked = false
             binding.rgOpitionThree.isChecked = false
 
-            val intent = Intent(this, MainActivity2::class.java)
-            startActivity(intent)
         }
     }
 }
