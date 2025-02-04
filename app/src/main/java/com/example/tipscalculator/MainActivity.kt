@@ -59,14 +59,7 @@ class MainActivity : AppCompatActivity() {
             binding.rgOpitionTwo.isChecked = false
             binding.rgOpitionThree.isChecked = false
 
-            //transferir resultado para proxima pagina
-            //deicar botoes em baixo
-            //apg tools txt
-            //fazer ui
-            //elaborar logo
-            //modo norturno
-            //ver paleta de cores
-            //basic é isso
+            //Intent
         }
     }
 }
