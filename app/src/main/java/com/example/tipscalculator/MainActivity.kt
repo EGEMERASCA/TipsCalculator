@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
                 val intent = Intent(this, MainActivity2::class.java)
                 intent.apply {
-                    putExtra()
+                    //putExtra()
                 }
                 startActivity(intent)
             }
