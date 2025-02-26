@@ -48,11 +48,13 @@ class MainActivity : AppCompatActivity() {
                 val totaltemp = vTotal / nPeople
                 val Tips = totaltemp * percentage / 100
                 val totalwtips = totaltemp + Tips
-                binding.tvResult.text = String.format("Total with tips: %.2f", totalwtips)
 
                 val intent = Intent(this, MainActivity2::class.java)
                 intent.apply {
-                    //putExtra()
+                    putExtra("totalTable",vTotal)
+                    putExtra("numPeople",nPeople)
+                    putExtra("percentage",percentage)
+                    putExtra("totalAmount",totalwtips)
                 }
                 startActivity(intent)
             }
