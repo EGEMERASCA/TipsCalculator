@@ -37,6 +37,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 
     <TextView
+        android:id="@+id/tv_num_people_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Total people:"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_tabel_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_tabel_label" />
+
+    <TextView
         android:id="@+id/tv_total_tabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,5 +53,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_total_tabel_label"
         tools:text="RS 250,00" />
+
+    <TextView
+        android:id="@+id/tv_num_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num_people_label"
+        tools:text="5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
