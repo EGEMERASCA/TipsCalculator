@@ -56,18 +56,21 @@ class MainActivity : AppCompatActivity() {
                     putExtra("percentage",percentage)
                     putExtra("totalAmount",totalwtips)
                 }
+                clean()
                 startActivity(intent)
             }
         }
 
         binding.btnClean.setOnClickListener {
-            binding.tvResult.text = ""
-            binding.tieTotal.setText("")
-            binding.tieNpeople.setText("")
-            binding.rgOpitionOne.isChecked = false
-            binding.rgOpitionTwo.isChecked = false
-            binding.rgOpitionThree.isChecked = false
-
+            clean()
         }
+    }
+
+    private fun clean(){
+        binding.tieTotal.setText("")
+        binding.tieNpeople.setText("")
+        binding.rgOpitionOne.isChecked = false
+        binding.rgOpitionTwo.isChecked = false
+        binding.rgOpitionThree.isChecked = false
     }
 }

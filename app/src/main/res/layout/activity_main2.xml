@@ -12,8 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Summary"
+        android:text="Resumo"
         android:textSize="32sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +22,7 @@
         android:id="@+id/tv_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Veja abaixo o resumo da sua conta."
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -32,18 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Total table:"
+        android:text="Total da mesa:"
         app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
-
-    <TextView
-        android:id="@+id/tv_num_people_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Total people:"
-        app:layout_constraintStart_toStartOf="@+id/tv_total_tabel_label"
-        app:layout_constraintTop_toBottomOf="@+id/tv_total_tabel_label" />
 
     <TextView
         android:id="@+id/tv_total_tabel"
@@ -55,6 +47,15 @@
         tools:text="RS 250,00" />
 
     <TextView
+        android:id="@+id/tv_num_people_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Quantidade de pessoas:"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_tabel_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_tabel_label" />
+
+    <TextView
         android:id="@+id/tv_num_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,5 +63,65 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_num_people_label"
         tools:text="5" />
+
+    <TextView
+        android:id="@+id/tv_percentage_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Porcentagem da gorgeta:"
+        app:layout_constraintStart_toStartOf="@+id/tv_num_people_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num_people_label" />
+
+    <TextView
+        android:id="@+id/tv_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_percentage_label"
+        tools:text="15%" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percentage_label" />
+
+    <TextView
+        android:id="@+id/tv_total_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Total:"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_percentage_label"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <TextView
+        android:id="@+id/tv_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_total_amount_label"
+        tools:text="57,50" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:text="Voltar"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
