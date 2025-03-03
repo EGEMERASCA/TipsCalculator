@@ -19,9 +19,9 @@ class MainActivity2 : AppCompatActivity() {
         val totalAmount = intent.getFloatExtra("totalAmount", 0.0f)
 
         binding.tvPercentage.text = percentage.toString()
-        binding.tvTotalAmount.text = totalAmount.toString()
+        binding.tvTotalAmount.text = "%.2f".format(totalAmount)
         binding.tvNumPeople.text = numPeople.toString()
-        binding.tvTotalTabel.text = totalTable.toString()
+        binding.tvTotalTabel.text = "%.2f".format(totalTable)
 
         binding.btnBack.setOnClickListener {
             finish()
