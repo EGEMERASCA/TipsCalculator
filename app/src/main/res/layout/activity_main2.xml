@@ -9,12 +9,11 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Resumo"
-        android:textSize="32sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,9 +95,9 @@
         android:id="@+id/tv_total_amount_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:text="Total:"
         android:layout_marginTop="32dp"
+        android:text="Total:"
+        android:textSize="24dp"
         app:layout_constraintStart_toStartOf="@+id/tv_percentage_label"
         app:layout_constraintTop_toBottomOf="@+id/separator" />
 
@@ -106,9 +105,9 @@
         android:id="@+id/tv_total_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_total_amount_label"
         tools:text="57,50" />
@@ -116,9 +115,9 @@
     <Button
         android:id="@+id/btn_back"
         android:layout_width="match_parent"
-        android:text="Voltar"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
