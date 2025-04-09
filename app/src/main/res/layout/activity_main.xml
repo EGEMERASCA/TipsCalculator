@@ -21,6 +21,7 @@
 
     <TextView
         android:id="@+id/tv_subtitle"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -38,6 +39,16 @@
         android:text="Digite o valor total da conta:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
+
+    <TextView
+        android:id="@+id/tv_hint_total_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32sp"
+        android:text="Digite o número de pessoas:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_total" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_total"
@@ -63,20 +74,26 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_number_of_people"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxStrokeWidth="0dp"
+        app:hintEnabled="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_total">
+        app:layout_constraintTop_toBottomOf="@+id/tv_hint_total_people">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_npeople"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite o número de pessoas"
+            android:hint="Ex: 5"
+            android:paddingStart="0dp"
             android:inputType="number"
             android:maxLength="2"
+            android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/til_total" />
 
     </com.google.android.material.textfield.TextInputLayout>
