@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Veja abaixo o resumo da sua conta."
+        android:text="Veja abaixo o resumo da sua conta"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -43,7 +43,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_total_tabel_label"
-        tools:text="RS 250,00" />
+        tools:text="250,00" />
 
     <TextView
         android:id="@+id/tv_num_people_label"

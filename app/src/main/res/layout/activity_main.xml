@@ -65,7 +65,7 @@
             android:id="@+id/tie_total"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ex: €35,00"
+            android:hint="Ex: 35,00"
             android:inputType="numberDecimal"
             android:paddingStart="0dp"
             android:textStyle="bold" />
