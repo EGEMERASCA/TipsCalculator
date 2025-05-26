@@ -48,6 +48,8 @@ class MainActivity : AppCompatActivity() {
                 val totaltemp = vTotal / nPeople
                 val Tips = totaltemp * percentage / 100
                 val totalwtips = totaltemp + Tips
+                val TipsTotal = vTotal * percentage / 100
+                val totalAmountWithTp = vTotal + TipsTotal
 
                 val intent = Intent(this, MainActivity2::class.java)
                 intent.apply {
@@ -55,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                     putExtra("numPeople",nPeople)
                     putExtra("percentage",percentage)
                     putExtra("totalAmount",totalwtips)
+                    putExtra("totalAmountWithTips",totalAmountWithTp)
                 }
                 clean()
                 startActivity(intent)

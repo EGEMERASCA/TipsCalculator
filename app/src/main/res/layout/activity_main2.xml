@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Total da mesa:"
+        android:text="Valor total:"
         app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
 
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Quantidade de pessoas:"
+        android:text="Número de pessoas:"
         app:layout_constraintStart_toStartOf="@+id/tv_total_tabel_label"
         app:layout_constraintTop_toBottomOf="@+id/tv_total_tabel_label" />
 
@@ -68,9 +68,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Porcentagem da gorjeta:"
+        android:text="Percentual da gorjeta:"
         app:layout_constraintStart_toStartOf="@+id/tv_num_people_label"
         app:layout_constraintTop_toBottomOf="@+id/tv_num_people_label" />
+
+    <TextView
+        android:id="@+id/tv_total_with_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Valor total com gorjeta:"
+        app:layout_constraintStart_toStartOf="@+id/tv_percentage_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percentage_label" />
+
+    <TextView
+        android:id="@+id/tv_total_Wtips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_total_with_tips"
+        tools:text="34,98" />
 
     <TextView
         android:id="@+id/tv_percentage"
@@ -80,7 +98,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_percentage_label"
         tools:text="15%" />
-
     <View
         android:id="@+id/separator"
         android:layout_width="match_parent"
@@ -89,14 +106,14 @@
         android:background="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_percentage_label" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_with_tips" />
 
     <TextView
         android:id="@+id/tv_total_amount_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Total:"
+        android:text="Total individual:"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="@+id/tv_percentage_label"
         app:layout_constraintTop_toBottomOf="@+id/separator" />
